@@ -1,0 +1,47 @@
+/* Header */
+.pageLink {
+  flex-basis: 50%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.pageLink a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.pageLink a:hover {
+  font-weight: 600;
+}
+.hoverIcon:hover {
+  cursor: pointer;
+}
+
+/* Product Gallery */
+img {
+  height: 300px;
+} 
+.text {
+  padding: 5px;
+}
+.productCard:hover {
+  cursor: pointer;
+  background-color: #F6F6F6;
+  font-weight: 600;
+}
+.text .title { 
+  font-weight: 600;
+  color: rgb(43, 42, 42);
+}
+.text .price { 
+  color: rgb(68, 67, 67);
+}
+
+
+
+/* product Item */
+
+/* .btn:hover {
+  color: #1e1f1f;
+  border: 1px solid #2d2e2e;
+} */
