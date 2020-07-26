@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: shoe store
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Installing node.js modeules
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: 12
+        
+    - name: creating build
+      run: npm run build
+       
+    - name: installing surge
+      run: npm install -g surge
+    
+    - name: deploying on surge
+      run: surge ./build shoe-store-by-tayyab.surge.sh/ --token ${{ secret.SURGE_TOKEN }}
+    
+    
