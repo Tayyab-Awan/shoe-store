@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../Context/CartState';
-import { CheckoutGreet } from './CheckoutGreet';
 
-import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -44,8 +43,11 @@ const useStyles = makeStyles({
   },
   billSummary: {
     padding: '20px',
+    width: '70%',
+    margin: '0 auto',
   },
   summaryText: {
+    color: '#414141',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -110,7 +112,7 @@ export const Cart = () => {
                 </Grid>
                 <Grid item md={4} xs={12}>
                     <Paper className={classes.billSummary}>
-                            <h3>Billing Summary</h3>
+                            <h3 style={{color: '#414141'}}>Billing Summary</h3>
                             <div className={classes.summaryText}>
                                 <h4>Subtotal</h4>
                                 <p>${subTotal}</p>

@@ -30,9 +30,6 @@ export default (state, action) => {
                             item.qty = newQtyDec;
                             item.itemsBill = newBillDec;
                         }
-                        else{
-                            item.qty = item.qty;
-                        }
                     }
                     return item;
                 }),

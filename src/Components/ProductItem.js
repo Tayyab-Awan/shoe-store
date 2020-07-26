@@ -63,7 +63,7 @@ export const ProductItem = () => {
             <Grid container spacing={3}>
                 <Grid item md={5}>
                     <div className={classes.imgLayout}>
-                        <img className={classes.imgStyle} src={shoe.image} />
+                        <img className={classes.imgStyle} src={shoe.image} alt="shoe" />
                     </div>
                 </Grid>
                 <Grid item md={7}  className={classes.text}>
