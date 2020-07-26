@@ -40,7 +40,7 @@ export const Header = () => {
                 <Toolbar>
                   <Link to="/" className={classes.title}>
                     <Typography variant="h6">
-                        Shoe Store 1
+                        Shoe Store
                     </Typography>
                   </Link>
                     <div className={"pageLink"}>
