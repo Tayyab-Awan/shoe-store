@@ -23,6 +23,6 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build shoe-store-by-tayyab.surge.sh/ --token ${{ secret.SURGE_TOKEN }}
+      run: surge ./build shoe-store-by-tayyab.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
     
     
