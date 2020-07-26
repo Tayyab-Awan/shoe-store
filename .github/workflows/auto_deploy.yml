@@ -16,6 +16,9 @@ jobs:
       with:
         node-version: 12
         
+    - name: NPM install
+      uses: bahmutov/npm-install@v1.1.0
+        
     - name: creating build
       run: npm run build
        
